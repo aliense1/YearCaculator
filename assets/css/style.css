@@ -30,34 +30,35 @@ body {
 
 .content {
   background: var(--White);
-  width: 750px;
-  padding: 50px;
+  width: 90%;
+  padding: 20px;
   border-radius: 20px;
-  border-bottom-right-radius: 40%;
   position: relative;
 }
 
 .input {
   display: flex;
-  margin-bottom: 35px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 input {
-  font-size: 32px;
-  width: 150px;
-  padding: 10px;
+  font-size: 20px;
+  flex: 1;
+  padding: 8px;
   margin-top: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   border-radius: 10px;
   border: 0.5px solid var(--Light-grey);
   outline: none;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   caret-color: var(--Purple);
 }
 
 h6 {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--Light-red);
 }
 
@@ -69,14 +70,14 @@ hr {
 
 button {
   position: absolute;
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: none;
   outline: none;
   background: var(--Purple);
-  right: 50px;
-  margin-top: -32px;
+  right: 20px;
+  bottom: -25px;
   cursor: pointer;
 }
 
@@ -89,15 +90,15 @@ input:focus {
 }
 
 p.error {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   color: var(--Light-red);
   font-style: italic;
-  margin: 5px 0;
+  margin: 3px 0;
 }
 
 .result h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-style: italic;
 }
 
@@ -106,7 +107,7 @@ p.error {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 9px;
   text-align: center;
 }
 
@@ -115,34 +116,7 @@ p.error {
 }
 
 @media only screen and (max-width: 375px) {
-  .input {
-    margin-bottom: 40px;
-  }
-  input {
-    font-size: 18px;
-    width: 80px;
-    margin-right: 10px;
-    border-radius: 5px;
-  }
-  .content {
-    background: var(--White);
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    border-bottom-right-radius: 30%;
-    position: relative;
-  }
-  .result h1 {
-    font-size: 45px;
-    font-style: italic;
-  }
-  p.error {
-    font-size: 10px;
-  }
-  button {
-    right: 40%;
-  }
   .result {
-    margin-top: 40px;
+    margin-top: 30px;
   }
-} 
+}
